@@ -133,8 +133,8 @@
 
 /* contraseña y su placeholder */
 .placeholder-circle::placeholder {
-    content: "\2022"; /* Código decimal de "&#9679;" */
-    color: gray; /* Color gris */
+    content: "\2022"; 
+    color: gray; 
 }
 
 
