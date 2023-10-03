@@ -186,6 +186,11 @@ display: block;
     
 }
 
+.white-arrow {
+    color: #fff; /* Color blanco */
+    font-size: var(--font-small);
+    font-weight: 700;
+}
 
 
 /* HERO */
