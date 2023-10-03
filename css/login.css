@@ -73,7 +73,7 @@ label {
 
 .form__input {
     border: none;
-    border-bottom: 1px solid var(--primary-solid);
+    border-bottom: 2px solid var(--primary-solid);
     font-size: var(--font-medium);
     margin: 0 var(--spacing-12);
 }
