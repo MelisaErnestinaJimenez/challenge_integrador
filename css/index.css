@@ -315,11 +315,24 @@ font-weight: 500;
     text-transform: uppercase;
 }
 
-.slider__items {
+/* .slider__items {
     display:flex;
     gap: var(--spacing-24);
+} */
+
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
 }
 
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+right: 0;
+}
 
 
 .card-item__cover {
@@ -403,14 +416,18 @@ font-weight: 500;
 
 /*ANIMATIONS*/
 
+
 @keyframes fade {
+
     0% {
         opacity: 0;
     }
 
-    100 {
+
+    100% {
         opacity: 1;
     }
+
 }
 
 
