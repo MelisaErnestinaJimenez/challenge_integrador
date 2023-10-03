@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+
+.container-main {
+    padding-top: var(--spacing-24);
+    padding-left: var(--spacing-68);
+    padding-bottom: var(--spacing-20);
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: " title title title title" "sub sub sub sub" " . name inName ." ". lastName inLastName ." " . email inEmail . " " . pass inPass . " " . passR inPassR . " " . registerButton terms .";
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    row-gap: var(--spacing-20);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-main {
+    padding-right: var(--spacing-128);
+    padding-bottom: var(--spacing-68);
+}
+
+.width-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
+}
+
+
+
+/* MAIN */
+
+.main-title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    grid-area: title;
+    justify-self: center;
+}
+
+.main-subtitle {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    grid-area: sub;
+    justify-self: center;
+}
+
+
+/* FORM */
+
+.form__name--label {
+    font-size: var(--font-large);
+    grid-area: name;
+    justify-self: start;
+}
+
+.form__name--input {
+    font-size: var(--font-small);
+    grid-area: inName;
+    justify-self: start;
+    width: 27rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__lastname--label {
+    font-size: var(--font-large);
+    grid-area: lastName;
+    justify-self: start;
+}
+
+.form__lastname--input {
+    font-size: var(--font-small);
+    grid-area: inLastName;
+    justify-self: start;
+    width: 27rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__email--label {
+    font-size: var(--font-large);
+    grid-area: email;
+    justify-self: start;
+}
+
+.form__email--input {
+    font-size: var(--font-small);
+    grid-area: inEmail;
+    justify-self: start;
+    width: 27rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__password--label {
+    font-size: var(--font-large);
+    grid-area: pass;
+    justify-self: start;
+}
+
+.form__password--input {
+    grid-area: inPass;
+    justify-self: start;
+    width: 27rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__repeat-password--label {
+    font-size: var(--font-large);
+    grid-area: passR;
+    justify-self: start;
+}
+
+.form__repeat-password--input {
+    color: #808080;
+    grid-area: inPassR;
+    justify-self: start;
+    width: 27rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+/* contraseña y su placeholder */
+.placeholder-circle::placeholder {
+    content: "\2022"; /* Código decimal de "&#9679;" */
+    color: gray; /* Color gris */
+}
+
+
+/* .form__login {} */
+
+.form__register--button {
+    font-size: var(--font-xsmall);
+    grid-area: registerButton;
+    justify-self: start;
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+    border: 0;
+    font-weight: 400;
+    font-size: var(--font-medium);
+    transition: all .3s ease-in-out;
+}
+
+.form__register--button:hover {
+    cursor: pointer;
+    background-color: var(--primary-500);
+}
+
+.form__register {
+    display: inline-block;
+    font-size: var(--font-small);
+    width: 30rem;
+    height: 5rem;
+    grid-area: terms;
+    justify-self: start;
+    padding: var(--spacing-8);
+}
+
+.form__register--terms__link {
+    color: var(--secondary-solid);
+    text-align: right;
+   
+ 
+}
+
+
