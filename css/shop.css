@@ -6,10 +6,10 @@
     --primary-500: rgba(255, 51, 51, 0.5);
     --primary-300: rgba(255, 51, 51, 0.3);
     /*  */
-    --secundary-solid: #1D84B5;
-    --secundary-900: rgba(29, 132, 181, 0.9);
-    --secundary-500: rgba(29, 132, 181, 0.5);
-    --secundary-300: rgba(29, 132, 181, 0.3);
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
     /*  */
     --dark-solid: #1F1F1F;
     --dark-900: rgba(31, 31, 31, 0.9);
@@ -240,7 +240,7 @@ header {
 
 .card-item__promo {
     font-size: var(--font-xsmall);
-    color: var(--secundary-solid);
+    color: var(--secondary-solid);
     font-weight: 700;
 }
 

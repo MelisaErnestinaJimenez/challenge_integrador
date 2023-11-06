@@ -9,7 +9,8 @@
 
 
 
---secondary-solid: #1D8485;
+--secondary-solid: #1D84B5;
+;
 --secondary-900: rgb(29, 132, 133, 0.9);
 --secondary-500: rgb(29, 132, 133, 0.5);
 --secondary-300: rgb(29, 132, 133, 0.3);
@@ -42,6 +43,7 @@
 
 --spacing-128: 12.8rem;
 --spacing-68: 6.8rem;
+--spacing-50:5.0rem;
 --spacing-36: 3.6rem ;
 --spacing-28: 2.8rem;
 --spacing-24:2.4rem;
