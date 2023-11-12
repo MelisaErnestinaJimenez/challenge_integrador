@@ -116,3 +116,47 @@ label {
     color: var(--secondary-solid);
     font-size: var(--font-small);
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .login__box {
+        width: 100%;
+        padding: var(--spacing-24);
+    }
+
+    .form__btn {
+        max-width: none;
+         font-size: var(--font-small) !important;
+        
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .login__box {
+        padding: var(--spacing-16);
+        display: flex;
+        width: 100%;
+    }
+
+    .login__form, .form__item {
+        display: flex;
+        width: 100%;
+      
+    }
+
+    .form__item {
+        font-size: var(--font-xsmall);
+    }
+
+    .form__btn {
+        max-width: 100%;
+        font-size: var(--font-small) !important;
+    }
+
+    .form__input {
+      width: 50%;
+    }
+}

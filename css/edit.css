@@ -1,3 +1,6 @@
+.container {
+    margin: var(--spacing-68);
+}
 
 
 select {
@@ -45,28 +48,34 @@ select {
 }
 
 .product-name-description {
-    font-size: var(--font-large);
+    font-size: var(--font-small);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--spacing-24);
+    margin-bottom: var(--spacing-12);
 }
 
-.product-name-description--name {
+.product-name-description {
     display: flex;
     gap: var(--spacing-16);
 }
 
 
 
-.product-name-description--name__input {
+
+.product-name__input {
     width: 300px;
     border: 0;
     border-bottom: 2px solid var(--primary-solid);
 }
 
-.product-name-description--textarea {
+.product-textarea {
     max-width: 700px;
     padding: var(--spacing-12);
+}
+
+textarea {
+    width: 100%;
 }
 
 .inputs {
@@ -184,4 +193,82 @@ select {
 
 
     
+  
+
+/* Establece las variables de espacio para tamaños responsivos */
+:root {
+    --spacing-responsive: 1rem;
+  }
+  
+  /* Agrega una regla de medios para pantallas más pequeñas */
+  @media only screen and (max-width: 768px) {
+    :root {
+      --spacing-responsive: 0.8rem;
+    }
+
+    .main-form {
+        margin: var(--spacing-36);
+    }
+  
+    .container {
+        margin: var(--spacing-8);
+    }
+    
+    .main-title {
+      font-size: var(--font-xlarge);
+    }
+
+    .product-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-name__label {
+        font-size: var(--font-small);
+    }
+
+    .product-name__input {
+        font-size: var(--font-small);
+    }
+
+   .product-textarea {
+        font-size: var(--font-large); 
+    }
+  
+    .options,
+    .product-name-description,
+    .inputs,
+    .promo,
+    .images,
+    .buttons {
+      flex-direction: column;
+      gap: var(--spacing-responsive);
+    }
+  
+    .options--select,
+    .inputs--input,
+    .inputs--input:nth-last-child(1),
+    .promo--input,
+    .promo--select-cuotas,
+    .images--input {
+      width: 100%;
+      max-width: none;
+      font-size: var(--font-xsmall) !important; 
+    }
+  
+    .promo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+align-items: center;
+        justify-content: left;
+    }
+    .promo--select-cuotas {
+      padding-right: 0;
+      width: 70%;
+    }
+  }
+  
+  /* Resto de tu CSS */
   

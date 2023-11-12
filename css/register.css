@@ -197,4 +197,58 @@ display: contents;
 padding: 10rem;
 } 
 
+/* Establecer las variables de espacio para tamaños responsivos */
+:root {
+    --spacing-responsive: 1rem;
+}
 
+/* Agregar una regla de medios para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    :root {
+        --spacing-responsive: 0.8rem;
+    }
+
+    .container-main {
+        grid-template-columns: 1fr;
+        row-gap: var(--spacing-responsive);
+        padding-left: var(--spacing-68);
+        padding-right: var(--spacing-68);
+    }
+
+    .form__name--input,
+    .form__lastname--input,
+    .form__email--input,
+    .form__password--input,
+    .form__repeat-password--input,
+    .form__register--button,
+    .form__register--terms {
+        width: 100%;
+        max-width: none;
+    }
+
+    .register {
+        width: 100%;
+        padding: var(--spacing-responsive);
+        box-sizing: border-box;
+  
+    }
+
+    .form__register {}
+
+    .form__register--button {
+        width: 50%;
+    }
+}
+
+/* Ajustes adicionales para pantallas más pequeñas (360px hacia abajo) */
+@media only screen and (max-width: 360px) {
+    .container-main {
+        padding-left: var(--spacing-responsive);
+        padding-right: var(--spacing-responsive);
+    }
+
+    .form__register {
+        width: 100%;
+        margin-left: 0;
+    }
+}

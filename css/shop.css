@@ -1,169 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
- :root {
-    /* Palette */
-    --primary-solid: #FF3333;
-    --primary-900: rgba(255, 51, 51, 0.9);
-    --primary-500: rgba(255, 51, 51, 0.5);
-    --primary-300: rgba(255, 51, 51, 0.3);
-    /*  */
-    --secondary-solid: #1D84B5;
-    --secondary-900: rgba(29, 132, 181, 0.9);
-    --secondary-500: rgba(29, 132, 181, 0.5);
-    --secondary-300: rgba(29, 132, 181, 0.3);
-    /*  */
-    --dark-solid: #1F1F1F;
-    --dark-900: rgba(31, 31, 31, 0.9);
-    --dark-500: rgba(31, 31, 31, 0.5);
-    --dark-300: rgba(31, 31, 31, 0.3);
-    /* background */
-    --dark-bg-solid: #30343F;
-    --light-bg-solid: #FAFAFF;
-    --light-font-solid: #FFFFFF;
-    /* Typography */
-    --base-font: 'Inter', sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
-    /* font sizes */
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.4em;
-    /* spacings */
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-24: 2.4rem;
-    --spacing-20: 2rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
+.menu-toggle {
+    display: none; 
 }
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: var(--base-font);
-    color: var(--dark-solid);
-    font-size: 62.5%;
-}
-
-img {
-    width: 100%;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    font-family: inherit;
-    /* en el figma dice 20px */
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-p {
-    font-size: var(--font-medium);
-}
-
-select {
-    
-    background: transparent;
-    background: url('https://api.iconify.design/ic/round-arrow-drop-up.svg?rotate=180deg') no-repeat center center / contain;
-    background-position-x: 100%;
-    border: 2px solid #30343F;
-    border-radius: 2px;
-    margin-right: 2rem;
-    padding: 1rem;
-    padding-right: 2rem;
-}
-
-
-/* HEADER */
-
-header {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-    background-color: var(--dark-bg-solid);
-    gap: var(--spacing-36);
-    padding: var(--spacing-36);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.navbar__logo {
-    max-width: 300px;
-}
-
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-20);
-}
-
-.navbar__link {
-    font-size: var(--font-medium);
-    padding: var(--spacing-8) var(--spacing-16);
-    display: inline-block;
-    transition: background .3s ease-in-out;
-    position: relative;
-}
-
-.navbar__link:hover {
-    background-color: var(--primary-900);
-}
-
-.with-submenu:hover>.submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    width: 300px;
-    position: absolute;
-    background-color: var(--dark-bg-solid);
-    z-index: 3;
-}
-
-.submenu__link {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    font-size: var(--font-medium);
-}
-
-.submenu__link:hover {
-    background-color: var(--primary-900);
-    transition: background .3s ease-in-out;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.width-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-8);
-}
-
-
 /* SLIDER */
 
 .slider {
@@ -183,7 +20,16 @@ header {
     font-size: var(--font-display);
     font-weight: 700;
     text-transform: uppercase;
+} 
+
+
+/* Tarjetas */
+
+.card-item {
+    flex: 1 1 clamp(250px,25%,25%) !important;
 }
+
+
 
 .card-item__cover {
     display: flex;
@@ -540,4 +386,393 @@ width: 3.1rem;
     100% {
         opacity: 1;
     }
+}
+
+
+
+/* medias queries */
+
+
+
+@media (max-width: 816px) {
+
+    /* Estilos para el menú activo */
+   
+    .navbar__menu {
+        font-size: var(--font-xsmall);
+        display: none;
+    }
+
+ .submenu__link {
+    font-size: var(--font-small);
+ }
+   
+  
+   
+   .navbar  {
+       width: 100%;
+       margin: 0;
+   }
+   
+   .navbar__menu.active {
+       display: contents;
+       flex-direction: column;
+       position: absolute;
+       top: 60px; /* Ajusta según sea necesario */
+       right: 0;
+       width: 100%;
+   
+       margin-top: var(--spacing-36);
+       background-color: var(--dark-bg-solid); /* Ajusta según sea necesario */
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta según sea necesario */
+       z-index: 1;
+   }
+   
+   .menu-toggle {
+       display: flex;
+       color: var(--light-bg-solid); /* Color del icono de hamburguesa, ajusta según sea necesario */
+       font-size: var(--font-jumbo); /* Tamaño del icono, ajusta según sea necesario */
+    width: var(--spacing-8);
+   padding-top: var(--spacing-8);
+    position: absolute;
+    right: 8vw;
+    width: 45px;
+    justify-content: end;
+    align-items: center;
+   }
+   
+   .submenu__item {
+       display: flex;
+       justify-content: center;
+   }
+   
+   .navbar__link {
+       display: flex;
+       justify-content: center;
+   }
+   
+   .submenu{
+   position: inherit;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+   
+   }
+
+  
+   
+   .submenu__item {
+       display: flex;
+       width: 100%;
+   }
+   
+   
+  
+   
+.with-submenu {
+    display: contents;
+}
+   
+   
+   
+       .container {
+           flex-direction: column; 
+       }
+   
+       .ui {
+           order: -1; 
+       }
+   
+   
+   
+       .search-results {
+   
+           margin: auto 0;
+           padding: 0;
+        
+        max-width: 100%;
+
+   
+       } 
+   
+       .search-results__container {
+        align-items: center; 
+      
+
+        
+       }
+
+       /* .card-item {
+              
+         flex: 1 1 clamp(250px, 50%, 50%);  
+       } */
+   }
+
+
+
+
+
+
+
+
+
+@media (max-width: 782px) {
+
+ /* Estilos para el menú activo */
+
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar  {
+    width: 100%;
+    margin: 0;
+}
+
+.navbar__menu.active {
+    display: contents;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según sea necesario */
+    right: 0;
+    width: 100%;
+
+    margin-top: var(--spacing-36);
+    background-color: var(--dark-bg-solid); /* Ajusta según sea necesario */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta según sea necesario */
+    z-index: 1;
+}
+
+.menu-toggle {
+    display: flex;
+    color: var(--light-bg-solid); /* Color del icono de hamburguesa, ajusta según sea necesario */
+    font-size: var(--font-jumbo); /* Tamaño del icono, ajusta según sea necesario */
+ width: var(--spacing-8);
+padding-top: var(--spacing-8);
+ position: absolute;
+ right: 8vw;
+ width: 45px;
+ justify-content: end;
+ align-items: center;
+}
+
+.submenu__item {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__link {
+    display: flex;
+    justify-content: center;
+}
+
+.submenu{
+position: inherit;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* .submenu__item {
+    display: flex;
+    width: 100%;
+} */
+
+
+
+
+
+
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .ui {
+        order: -1; 
+    }
+
+
+
+    .search-results {
+
+        margin: auto 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    
+max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
+
+    } 
+
+    .search-results__container {
+        width: 90%; /* Cambiado a un porcentaje para hacerlo más adaptable */
+        box-sizing: border-box;
+    }
+}
+
+
+@media (max-width: 582px) {
+
+
+
+    .menu-toggle {
+       font-size: var(--font-large);
+    }
+
+
+    .navbar__logo {
+        max-width: 25rem;
+    }
+
+    .navbar__menu {
+        font-size: var(--font-xsmall);
+    }
+
+ .submenu__link {
+    font-size: var(--font-small);
+ }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .ui {
+        order: -1; 
+    }
+
+    .search-results {
+
+        margin: auto 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        /* flex: 1 1 clamp(200px, 50%, 500px); */
+max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
+
+    } 
+
+    .search-results__container {
+        width: 100%; /* Cambiar el ancho al 100% */
+        box-sizing: border-box; /* Incluir el padding en el ancho */
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 412px) {
+
+   
+
+    .navbar__menu {
+        font-size: var(--font-xsmall);
+    }
+
+ .submenu__link {
+    font-size: var(--font-small);
+ }
+
+    .navbar__logo {
+        max-width: 20rem;
+    }
+
+
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .ui {
+        order: -1; 
+     
+    }
+
+   
+
+    .search-results {
+      
+        margin: auto 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+     
+ 
+
+    } 
+
+    .search-results__container {
+      
+        width: 100%; /* Cambiar el ancho al 100% */
+        box-sizing: border-box; /* Incluir el padding en el ancho */
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-item {
+        flex: 1 1 clamp(150px, 25%, 25%);
+    }
+
+    .pagination {
+      
+        display: flex;
+        justify-content: center;
+  
+       
+    }
+}
+
+
+@media (max-width: 320px) {
+
+ 
+
+    .navbar__logo {
+        max-width: 35rem;
+        margin-right: var(--spacing-28);
+    }
+
+    .ui {
+      display: flex;
+        width: 100%;
+    }
+
+  .ui__price-container--content {
+display: flex;
+flex-direction: column;
+width: 50%;
+ }
+
+ .search-results {
+    display: flex;
+    width: 100%;
+ }
+
+    .search-results__container {
+      
+        width: 100%; /* Cambiar el ancho al 100% */
+        box-sizing: border-box; /* Incluir el padding en el ancho */
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-item {
+        flex: 1 1 clamp(150px, 25%, 25%);
+    }
+
+
+
+
+.barrabtn {
+max-width: 100px;
+
+}
 }

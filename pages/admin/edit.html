@@ -5,58 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
     <title>EDIT ITEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/edit.css">
 </head>
 
 <body>
 
-    <header><!-- INICIO HEADER -->
+     <!--Inicio header-->
+     <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          
+        </div>
         <nav class="navbar container">
             <picture class="navbar__logo">
-    
-                <a href="../../index.html"> 
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca de Funkoshop">  
-                </a>
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
             </picture>
-    
-            
-          
-          <ul class="navbar__menu">
-    <li class="navbar__item with-submenu">
-        <a class="navbar__link with-icon" href="../shop/shop.html">SHOP <iconify-icon class="white-arrow" icon="carbon:chevron-down"></iconify-icon></a>
+            <ul class="navbar__menu">
+               
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/create.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../index.html">SALIR</a>
 
-    <ul class="submenu">
-        <li class="submenu__item">
-            <a href="" class="submenu__link">Funkos</a>
-        </li>
-        <li class="submenu__item">
-            <a href="" class="submenu__link">Remeras</a>
-        </li>
-        <li class="submenu__item">
-          <a href="" class="submenu__link">Llaveros</a>  
-        </li>
-    </ul>
-    
-    </li>
-    <li>
-        <a class="navbar__link"    href="/pages/contact.html">CONTACTO</a>
-    </li>
-    <li class="navbar__item">
-        <a class="navbar__link"    href="../admin/login.html">LOGIN</a>
-    </li>
-    <li class="navbar__item">
-        <a  class="navbar__cart"   href="/pages/shop/cart.html"> <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
-    
-        </a>
-    </li>
-    
-          </ul>
+                </li>
+            </ul>
         </nav>
-    
-      
-    </header><!-- FIN HEADER-->
+    </header>
+    <!--Fin header-->
 
 
     <main class="container">
@@ -84,14 +68,17 @@
                     <option value="" >licencia 2</option>
                 </select>
             </section>
-            <section class="product-name-description">
-                <section class="product-name-description--name">
-                    <label class="product-name-description--name__label" for="nombre-producto">Nombre del producto:</label>
-                    <input class="product-name-description--name__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+
+            <section class="product-name">
+                <section class="product-name-description">
+                    <label class="product-name__label" for="nombre-producto">Nombre del producto:</label>
+                    <input class="product-name__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
 
                 </section>
-                <textarea class="product-name-description--textarea" name="descripcion-producto" id="descripcion-producto" cols="30" rows="10" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  "></textarea>
+                <textarea class="product-textarea" name="descripcion-producto" id="descripcion-producto" cols="30" rows="10" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  "></textarea>
             </section>
+
+
             <section class="inputs">
                 <label class="inputs--label" for="sku">SKU:</label>
                 <input class="inputs--input" type="text" name="sku" id="sku" placeholder="NAR001012">
@@ -156,7 +143,7 @@
     
     </footer>
 
-
+    <script src="../../javascript/menuhamb.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </body>
 

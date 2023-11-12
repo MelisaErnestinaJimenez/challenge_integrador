@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
     <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm//@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
    
 
 
 <header><!-- INICIO HEADER -->
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      
+    </div>
     <nav class="navbar container">
         <picture class="navbar__logo">
 
@@ -62,7 +68,7 @@
     <article class="hero__content container"> 
      <h3 class="hero__title" >Nuevos Ingresos</h3>
      <p class="hero__text" >Descubrí el próximo Funko Pop de tu colección</p>
-     <a class="hero__link"  href="./pages/shop.html">SHOP</a>
+     <a class="hero__link"  href="./pages/shop/shop.html">SHOP</a>
  </article>
  </section>
 
@@ -210,7 +216,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
+<script src="../../javascript/menuhamb.js"></script>
 <script>
     new Glide('.glide', {
         type: 'carousel',

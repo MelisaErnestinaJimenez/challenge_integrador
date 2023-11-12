@@ -1,0 +1,380 @@
+
+:root {
+
+    /* Paleta de colores  */
+
+--primary-solid:  #FF3333;
+--primary-900:  rgb(255, 51, 51, 0.9);
+--primary-500:  rgb(255, 51, 51, 0.5);
+--primary-300: rgb(255, 51, 51, 0.3);
+
+
+
+--secondary-solid: #1D84B5;
+;
+--secondary-900: rgb(29, 132, 133, 0.9);
+--secondary-500: rgb(29, 132, 133, 0.5);
+--secondary-300: rgb(29, 132, 133, 0.3);
+
+--dark-solid:  #1f1f1f;
+--dark-900:  rgb(31, 31, 31, 0.9);
+--dark-500:  rgb(31, 31, 31, 0.5);
+--dark-300:  rgb(31, 31, 31, 0.3);
+
+--dark-bg-solid:  #30343F;
+--light-bg-solid: #FAFAFF;
+--light-font-solid: #FFFFFF;
+
+/* Typography */
+
+--base-font: 'Inter', sans-serif;
+--alternative-font: 'Raleway', sans-serif;
+
+/* font sizes */
+
+--font-display: 4.6em;
+--font-jumbo: 3.8em;
+--font-xlarge: 3em;
+--font-large: 2.4em;
+--font-medium: 1.8em;
+--font-small: 1.6em;
+--font-xsmall:1.2em;
+
+/* Spacings  */
+
+--spacing-128: 12.8rem;
+--spacing-68: 6.8rem;
+--spacing-50:5.0rem;
+--spacing-36: 3.6rem ;
+--spacing-28: 2.8rem;
+--spacing-24:2.4rem;
+--spacing-20: 2.0rem;
+--spacing-16: 1.6rem;
+--spacing-12: 1.2rem ;
+--spacing-8: 0.8rem ;
+
+
+
+
+
+
+
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+
+html {
+    font-family:  var(--base-font);
+font-size: 62.5%;
+color: var(--dark-solid);
+
+}
+
+
+a{
+    text-decoration: none;
+ 
+    font-family: inherit;
+    color: inherit;
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+
+.cont-bar {
+    display: flex;
+    flex-wrap: wrap; 
+
+    margin-bottom: var(--spacing-24);
+}
+
+/* .selectores{
+    border-radius: 5px;
+    width: 100%;
+
+    padding-left: var(--spacing-12);
+    color: var(--light-color);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-12);
+} */
+
+.selectores{
+    border-radius: 5px;
+    width: 243.03px;
+    height: 44.28px;
+    padding-left: var(--spacing-12);
+    color: var(--light-color);
+}
+
+
+ option {
+    width: 50%;
+}
+
+
+
+.elegir-archivo{
+    border-radius: 5px;
+    width: 8rem;
+    font-family: var(--base-font);    
+}
+
+
+.main-container {
+    margin-top: var(--spacing-24);
+    margin-bottom: var(--spacing-24);
+    width: 100%; 
+}
+
+
+
+.item-title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 100;
+    margin-bottom: var(--spacing-16);
+
+}
+
+.categoria{
+
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    margin-left: var(--spacing-24);
+
+}
+
+.licencia{
+    font-family: var(--alternative-font);
+    font-size: var(--spacing-24);
+    margin-left: var(--spacing-24);
+}
+
+
+.title-create{
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    padding-right: 10px;
+   
+}
+
+.caracteristicas{
+    width: 100%;
+    height: var(--spacing-28);
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: var(--spacing-36);
+    
+}
+
+.textarea {
+    width: 90%; 
+    margin: var(--spacing-24) 0;
+    padding-top: var(--spacing-12);
+    padding-left: var(--spacing-12);
+    border-radius: 4px;
+    color: var(--light-color);
+}
+
+.cuotas {
+    display: flex;
+    border-radius: 5px;
+    width: 100%; 
+    height: 44px;
+    text-align: left;
+    padding-left: var(--spacing-12);
+}
+
+ .input-border-c{
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 20%;
+    height: 27.36px;
+    text-align: center;
+}
+
+.input-border-b {
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 40%;
+    height: 27.36px;
+    text-align: left;
+}
+
+.input-border-a {
+    border: none;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 40%;
+    height: 27.36px;
+    text-align: center;
+} 
+
+
+
+
+.payment {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir el ajuste en dispositivos pequeños */
+    width: 100%;
+
+
+}
+.payment-details {
+    display: flex;
+    align-items: center;
+
+}
+
+.elegir-archivo{
+    border-radius: 5px;
+    width: 125.24px;
+    height: 25.29px;
+    font-family: var(--base-font);    
+    font-size: 14px;
+    background-color: var(--light-color);
+}
+
+.btns {
+    width: 100%; 
+    height: 44.33px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.btn {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    width: 20%; 
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: var(--spacing-28); 
+    margin-bottom: 15px; 
+}
+
+
+.archivo-img {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    margin-bottom: var(--spacing-24);
+    margin-top: var(--spacing-24);
+}
+
+.text-img {
+    font-family: var(--alternative-font);
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 582px) {
+
+   input, select, .archivo-img {
+        font-size: 100%;
+    }
+
+    .cont-bar {
+        flex-direction: column;
+    }
+
+
+.title-create {
+    width: 80%;
+}
+   
+
+
+
+    .selectores {
+        border-radius: 5px;
+        width: 80%; /* Ajusta según tus necesidades */
+        height: 44.28px;
+        padding-left: var(--spacing-12);
+        color: var(--light-color);
+        margin-top: var(--spacing-12);
+        appearance: none; 
+      
+    }
+
+    option {
+        font-size: var(--font-xsmall);
+    }
+    
+    textarea {
+        margin-left: var(--spacing-24);
+    }
+
+    .caracteristicas {
+        width: 100%; /* Ajusta según tus necesidades */
+        height: 50%;
+        box-sizing: border-box;
+        padding-left: var(--spacing-12);
+        padding-right: var(--spacing-12);
+    }
+
+   
+    .cuotas,
+    .input-border-b,
+    .input-border-a,
+    .elegir-archivo,
+    .btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--spacing-8);
+      
+    }
+
+    .input-border-c {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: var(--spacing-8);
+    }
+
+    .caracteristicas,
+    .payment {
+        flex-direction: column;
+    }
+
+
+    .archivo-img {
+        height: auto;
+    }
+  
+
+    .btn , .text-img, .cuotas {
+        font-size: var(--font-medium);
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .btn {
+        display: flex;
+        width: 50%;
+        margin-right: auto 0;
+     
+    }
+}
