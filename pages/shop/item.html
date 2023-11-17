@@ -225,23 +225,30 @@
 
 <script src="../../javascript/menuhamb.js"></script>
 
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 0,
-            perView: 3,
-            gap: 30,
-            breakpoint: {
-                991: {
-                    perView: 2
-                },
-                768: {
-                    perView: 1
-                }
+<script>
+    new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        gap: 30,
+        breakpoints: {
+            991: {
+                perView: 2
+            },
+            768: {
+                perView: 2
+            },
+            582: {
+                perView: 1
+            },
+            412: {
+                perView: 1
             }
-    
-        }).mount();
-    </script>
+        }
+
+    }).mount();
+</script>
+
 
 </body>
 
