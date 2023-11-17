@@ -5,4 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function () {
         navbarMenu.classList.toggle('active');
     });
+
+    //  tactil
+    menuToggle.addEventListener('touchstart', function () {
+        navbarMenu.classList.toggle('active');
+    });
 });
