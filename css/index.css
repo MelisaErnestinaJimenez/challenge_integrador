@@ -559,6 +559,23 @@ iconify-icon {
 
 
 @media (max-width: 782px) {
+
+    .collection {
+        display: inherit;
+        flex-direction: column-reverse;
+        padding-top: var(--spacing-24);
+        padding-bottom: var(--spacing-68);
+
+    }
+     .collection__content{
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }  
+
+
+   
+
     .footer {
         width: 100%;
     }
