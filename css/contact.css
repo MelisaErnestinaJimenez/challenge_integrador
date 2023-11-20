@@ -154,6 +154,12 @@ footer {
 
 /* FORM */
 
+.form__contact {
+display: contents;
+width: 100%;
+height: 100%;
+}
+
 .form__name--label {
     font-size: var(--font-large);
     grid-area: name;
@@ -222,7 +228,7 @@ footer {
 
 /* .form__login {} */
 
-.form__register--button {
+.form__send--button {
     font-size: var(--font-xsmall);
     grid-area: registerButton;
     justify-self: start;
@@ -236,43 +242,33 @@ footer {
     transition: all .3s ease-in-out;
 }
 
-.form__register--button:hover {
+.form__send--button:hover {
     cursor: pointer;
     background-color: var(--primary-500);
 }
 
-.form__register {
-    display: inline-block;
-    font-size: var(--font-medium);
-    width: 40rem;
-    margin-left: -8rem;
-    grid-area: terms;
-    justify-self: start;
-    padding: var(--spacing-8);
-    letter-spacing: 1px;
-}
-
-.form__register--terms__link {
-    color: var(--secondary-solid);
-    text-align: right;
+.form__contact input label: select {
    
- 
+
 }
 
 
 
-input[type="checkbox"] {
-    box-shadow: inset 0 0 0 2px black; 
-    margin: 1rem;
-}
 
 
 
- .register {
+
+ .send {
 display: contents;
  width: 100%; 
+font-size: var(--font-xsmall);
 
 }   
+
+.form__send--button {
+    width: 50% !important;
+    max-width: 10rem;
+}
 
 
 
@@ -283,41 +279,59 @@ display: contents;
 /* ---------------------MEDIAS QUERIES------------------------- */
 
 /* Establecer las variables de espacio para tamaños responsivos */
-:root {
-    --spacing-responsive: 1rem;
-}
-
 
 
 
 
 
 @media only screen and (max-width: 950px) {
-    :root {
-        --spacing-responsive: 0.8rem;
-    }
+ 
 
     .container-main {
-        grid-template-columns: 1fr;
+        display: flex;
+      flex-direction: column;
         row-gap: var(--spacing-responsive);
         padding-left: var(--spacing-68);
         padding-right: var(--spacing-68);
-    }
+        justify-content: center; 
+    }  
+
+    
+
+    
 
   .main-title {
-        font-size: var(--font-jumbo);
+        font-size: var(--font-display);
         width: 100%;
         text-align: center;
+        margin-top: var(--spacing-36);
+        margin-bottom: var(--spacing-28);
             }
         
 
     .main-subtitle {
-font-size: var(--font-large);
+font-size: var(--font-jumbo);
 width: 100%;
 text-align: center;
     }
 
 
+    .form__contact {
+    display: flex;
+    flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: var(--spacing-68);
+  margin-bottom: var(--spacing-68);
+  font-size: var(--font-xsmall);
+      
+    }
+
+    .form__contact input {
+        padding-top: var(--spacing-12);
+        font-size: var(--font-large);
+
+    }
 
     
     .form__name--input,
@@ -325,32 +339,31 @@ text-align: center;
     .form__email--input,
     .form__mensaje--input,
     .form__repeat-password--input,
-    .form__register--button,
-    .form__register--terms {
+    .form__send--button
+ {
         width: 100%;
+        height: 100%;
         max-width: none;
+        margin-bottom: var(--spacing-24);
+       
     }
 
 
-    .register {
+    .send {
+       display: contents;
         width: 100%;
-        padding: var(--spacing-responsive);
+    
         box-sizing: border-box;
-        margin-top: 0;
+        margin-top: var(--spacing-16);
         max-width: none;
+       
     }
+  
 
-    .form__register {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-left: 0; /* Ajustar según sea necesario */
-    }
-
-    .form__register--button {
+    .form__send--button {
         width: 100%;
         text-align: center;
-        margin-top: var(--spacing-16); /* Ajustar según sea necesario */
+        margin-top: var(--spacing-16); 
     }
 
 
@@ -365,17 +378,33 @@ text-align: center;
 
 /* Ajustes adicionales para pantallas más pequeñas (360px hacia abajo) */
 @media only screen and (max-width: 472px) {
+
+    .main-title {
+        font-size: var(--font-jumbo);
+    
+            }
+        
+
+    .main-subtitle {
+font-size: var(--font-large);
+width: 100%;
+text-align: center;
+    }
+
     .container-main {
-        padding-left: var(--spacing-responsive);
-        padding-right: var(--spacing-responsive);
+        padding-left: var(--spacing-24);
+        padding-right: var(--spacing-24);
     }
 
-    .form__register {
-        width: 100%;
-        margin-left: 0;
+    .form__contact input {
+        padding-top: var(--spacing-12);
+        font-size: var(--font-medium);
+
     }
 
-    .register {
+ 
+
+    .send {
         width: 100%;
         padding: var(--spacing-responsive);
         box-sizing: border-box;
@@ -390,14 +419,14 @@ text-align: center;
 
 @media only screen and (max-width: 350px)  {
     .main-title {
-        font-size: var(--font-large);
+        font-size: var(--font-jumbo);
         width: 100%;
         text-align: center;
             }
         
 
     .main-subtitle {
-font-size: var(--font-medium);
+font-size: var(--font-large);
 width: 100%;
 text-align: center;
     }
