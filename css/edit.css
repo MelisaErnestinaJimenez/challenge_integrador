@@ -1,6 +1,4 @@
-.container {
-    margin: var(--spacing-68);
-}
+
 
 
 select {
@@ -195,12 +193,12 @@ textarea {
     
   
 
-/* Establece las variables de espacio para tamaños responsivos */
+
 :root {
     --spacing-responsive: 1rem;
   }
   
-  /* Agrega una regla de medios para pantallas más pequeñas */
+ 
   @media only screen and (max-width: 768px) {
     :root {
       --spacing-responsive: 0.8rem;
@@ -269,6 +267,4 @@ align-items: center;
       width: 70%;
     }
   }
-  
-  /* Resto de tu CSS */
   

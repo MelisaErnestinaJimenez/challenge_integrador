@@ -107,7 +107,6 @@ footer {
 }
 
 
-/* SEARCH-FILTER */
 
 .ui {
     display: flex;
@@ -241,7 +240,7 @@ footer {
 }
 
 
-/* search-results */
+
 
 main {
     display: flex;
@@ -396,7 +395,7 @@ width: 3.1rem;
 
 @media (max-width: 816px) {
 
-    /* Estilos para el menú activo */
+ 
    
     .navbar__menu {
         font-size: var(--font-xsmall);
@@ -418,20 +417,20 @@ width: 3.1rem;
        display: contents;
        flex-direction: column;
        position: absolute;
-       top: 60px; /* Ajusta según sea necesario */
+       top: 60px; 
        right: 0;
        width: 100%;
    
        margin-top: var(--spacing-36);
-       background-color: var(--dark-bg-solid); /* Ajusta según sea necesario */
-       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta según sea necesario */
+       background-color: var(--dark-bg-solid); 
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
        z-index: 1;
    }
    
    .menu-toggle {
        display: flex;
-       color: var(--light-bg-solid); /* Color del icono de hamburguesa, ajusta según sea necesario */
-       font-size: var(--font-jumbo); /* Tamaño del icono, ajusta según sea necesario */
+       color: var(--light-bg-solid); 
+       font-size: var(--font-jumbo); 
     width: var(--spacing-8);
    padding-top: var(--spacing-8);
     position: absolute;
@@ -518,7 +517,7 @@ width: 3.1rem;
 
 @media (max-width: 782px) {
 
- /* Estilos para el menú activo */
+
 
 
 .navbar__menu {
@@ -534,20 +533,20 @@ width: 3.1rem;
     display: contents;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Ajusta según sea necesario */
+    top: 60px; 
     right: 0;
     width: 100%;
 
     margin-top: var(--spacing-36);
-    background-color: var(--dark-bg-solid); /* Ajusta según sea necesario */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajusta según sea necesario */
+    background-color: var(--dark-bg-solid); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     z-index: 1;
 }
 
 .menu-toggle {
     display: flex;
-    color: var(--light-bg-solid); /* Color del icono de hamburguesa, ajusta según sea necesario */
-    font-size: var(--font-jumbo); /* Tamaño del icono, ajusta según sea necesario */
+    color: var(--light-bg-solid); 
+    font-size: var(--font-jumbo); 
  width: var(--spacing-8);
 padding-top: var(--spacing-8);
  position: absolute;
@@ -604,12 +603,12 @@ position: inherit;
         flex-direction: column;
         align-items: center;
     
-max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
+max-width: 100%; 
 
     } 
 
     .search-results__container {
-        width: 90%; /* Cambiado a un porcentaje para hacerlo más adaptable */
+        width: 90%; 
         box-sizing: border-box;
     }
 }
@@ -651,13 +650,13 @@ max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
         flex-direction: column;
         align-items: center;
         /* flex: 1 1 clamp(200px, 50%, 500px); */
-max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
+max-width: 100%; 
 
     } 
 
     .search-results__container {
-        width: 100%; /* Cambiar el ancho al 100% */
-        box-sizing: border-box; /* Incluir el padding en el ancho */
+        width: 100%; 
+        box-sizing: border-box; 
     }
 }
 
@@ -709,8 +708,8 @@ max-width: 100%; /* Agrega un máximo de 500px al ancho del elemento */
 
     .search-results__container {
       
-        width: 100%; /* Cambiar el ancho al 100% */
-        box-sizing: border-box; /* Incluir el padding en el ancho */
+        width: 100%; 
+        box-sizing: border-box; 
         max-width: 80%;
         display: flex;
         flex-direction: column;
@@ -757,8 +756,8 @@ width: 50%;
 
     .search-results__container {
       
-        width: 100%; /* Cambiar el ancho al 100% */
-        box-sizing: border-box; /* Incluir el padding en el ancho */
+        width: 100%; 
+        box-sizing: border-box; 
         max-width: 80%;
         display: flex;
         flex-direction: column;

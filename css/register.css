@@ -235,14 +235,14 @@ footer {
     font-size: var(--font-medium);
 }
 
-/* contraseña y su placeholder */
+/* contraseña y placeholder */
 .placeholder-circle::placeholder {
     content: "\2022"; 
     color: gray; 
 }
 
 
-/* .form__login {} */
+
 
 .form__register--button {
     font-size: var(--font-xsmall);
@@ -304,7 +304,6 @@ display: contents;
 
 /* ---------------------MEDIAS QUERIES------------------------- */
 
-/* Establecer las variables de espacio para tamaños responsivos */
 :root {
     --spacing-responsive: 1rem;
 }
@@ -366,13 +365,13 @@ text-align: center;
         width: 100%;
         display: flex;
         align-items: center;
-        margin-left: 0; /* Ajustar según sea necesario */
+        margin-left: 0; 
     }
 
     .form__register--button {
         width: 100%;
         text-align: center;
-        margin-top: var(--spacing-16); /* Ajustar según sea necesario */
+        margin-top: var(--spacing-16); 
     }
 
 
@@ -385,7 +384,7 @@ text-align: center;
 
 
 
-/* Ajustes adicionales para pantallas más pequeñas (360px hacia abajo) */
+
 @media only screen and (max-width: 472px) {
     .container-main {
         padding-left: var(--spacing-responsive);
@@ -428,7 +427,7 @@ text-align: center;
 
 @media only screen and (max-width: 280px) {
     .container-main {
-        max-width: 100%; /* o el ancho máximo deseado */
+        max-width: 100%; 
     }
 
     .main-title {
