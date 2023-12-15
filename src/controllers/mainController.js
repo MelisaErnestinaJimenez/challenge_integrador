@@ -1,0 +1,8 @@
+module.exports = {
+    home: (req, res) => {
+        res.render('index', { title: 'HOME' });
+    },
+    contact: (req, res) => res.send('Route for Contact View'),
+    about: (req, res) => res.send('Route for About View'),
+    faqs: (req, res) => res.send('Route for Faqs View'),
+};
