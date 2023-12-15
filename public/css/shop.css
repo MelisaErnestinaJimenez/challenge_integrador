@@ -25,7 +25,7 @@
 
 /* Tarjetas */
 
-.card-item {
+.search-results_container, .card-item {
     flex: 1 1 clamp(250px,25%,25%) !important;
 }
 
@@ -260,7 +260,7 @@ main {
     display:flex;
  
      box-sizing: border-box;
-  
+     flex: 1 1 clamp(250px,25%,25%) !important;
 }
 
 
