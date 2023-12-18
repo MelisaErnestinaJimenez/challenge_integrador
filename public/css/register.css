@@ -1,0 +1,491 @@
+
+:root {
+
+    /* Paleta de colores  */
+
+--primary-solid:  #FF3333;
+--primary-900:  rgb(255, 51, 51, 0.9);
+--primary-500:  rgb(255, 51, 51, 0.5);
+--primary-300: rgb(255, 51, 51, 0.3);
+
+
+
+--secondary-solid: #1D84B5;
+;
+--secondary-900: rgb(29, 132, 133, 0.9);
+--secondary-500: rgb(29, 132, 133, 0.5);
+--secondary-300: rgb(29, 132, 133, 0.3);
+
+--dark-solid:  #1f1f1f;
+--dark-900:  rgb(31, 31, 31, 0.9);
+--dark-500:  rgb(31, 31, 31, 0.5);
+--dark-300:  rgb(31, 31, 31, 0.3);
+
+--dark-bg-solid:  #30343F;
+--light-bg-solid: #FAFAFF;
+--light-font-solid: #FFFFFF;
+
+/* Typography */
+
+--base-font: 'Inter', sans-serif;
+--alternative-font: 'Raleway', sans-serif;
+
+/* font sizes */
+
+--font-display: 4.6em;
+--font-jumbo: 3.8em;
+--font-xlarge: 3em;
+--font-large: 2.4em;
+--font-medium: 1.8em;
+--font-small: 1.6em;
+--font-xsmall:1.2em;
+
+/* Spacings  */
+
+--spacing-128: 12.8rem;
+--spacing-68: 6.8rem;
+--spacing-50:5.0rem;
+--spacing-36: 3.6rem ;
+--spacing-28: 2.8rem;
+--spacing-24:2.4rem;
+--spacing-20: 2.0rem;
+--spacing-16: 1.6rem;
+--spacing-12: 1.2rem ;
+--spacing-8: 0.8rem ;
+
+
+
+
+
+
+
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+
+html {
+    font-family:  var(--base-font);
+font-size: 62.5%;
+color: var(--dark-solid);
+
+}
+
+
+a{
+    text-decoration: none;
+ 
+    font-family: inherit;
+    color: inherit;
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+
+
+.container-main {
+    padding-top: var(--spacing-24);
+    padding-left: var(--spacing-68);
+    padding-bottom: var(--spacing-20);
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas: " title title title title" "sub sub sub sub" " . name inName ." ". lastName inLastName ." " . email inEmail . " " . pass inPass . " " . passR inPassR . " " . registerButton terms .";
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    row-gap: var(--spacing-20);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-main {
+    padding-right: var(--spacing-128);
+    padding-bottom: var(--spacing-68);
+}
+
+.width-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-8);
+}
+
+
+
+/* MAIN */
+
+.main-title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    grid-area: title;
+    justify-self: center;
+}
+
+.main-subtitle {
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    grid-area: sub;
+    justify-self: center;
+}
+
+
+/* FORM */
+
+.form__name--label {
+    font-size: var(--font-large);
+    grid-area: name;
+    justify-self: start;
+}
+
+.form__name--input {
+    font-size: var(--font-small);
+    grid-area: inName;
+    justify-self: start;
+    width: 24rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__lastname--label {
+    font-size: var(--font-large);
+    grid-area: lastName;
+    justify-self: start;
+}
+
+.form__lastname--input {
+    font-size: var(--font-small);
+    grid-area: inLastName;
+    justify-self: start;
+    width: 24rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__email--label {
+    font-size: var(--font-large);
+    grid-area: email;
+    justify-self: start;
+}
+
+.form__email--input {
+    font-size: var(--font-small);
+    grid-area: inEmail;
+    justify-self: start;
+    width: 24rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form__password--label {
+    font-size: var(--font-large);
+    grid-area: pass;
+    justify-self: start;
+}
+
+.form__password--input {
+    grid-area: inPass;
+    justify-self: start;
+    width: 24rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: var(--font-medium);
+
+    /* border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    
+    margin: 0 var(--spacing-12); */
+}
+
+.form__repeat-password--label {
+    font-size: var(--font-large);
+    grid-area: passR;
+    justify-self: start;
+}
+
+.form__repeat-password--input {
+    color: #808080;
+    grid-area: inPassR;
+    justify-self: start;
+    width: 24rem;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: var(--font-medium);
+}
+
+/* contraseña y su placeholder */
+.placeholder-circle::placeholder {
+    content: "\2022"; 
+    color: gray; 
+}
+
+
+/* .form__login {} */
+
+.form__register--button {
+    font-size: var(--font-xsmall);
+    grid-area: registerButton;
+    justify-self: start;
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+    padding-right: var(--spacing-16);
+    border: 0;
+    font-weight: 400;
+    font-size: var(--font-medium);
+    transition: all .3s ease-in-out;
+}
+
+.form__register--button:hover {
+    cursor: pointer;
+    background-color: var(--primary-500);
+}
+
+.form__register {
+    display: inline-block;
+    font-size: var(--font-medium);
+    width: 40rem;
+    margin-left: -8rem;
+    grid-area: terms;
+    justify-self: start;
+    padding: var(--spacing-8);
+    letter-spacing: 1px;
+}
+
+.form__register--terms__link {
+    color: var(--secondary-solid);
+    text-align: right;
+   
+ 
+}
+
+
+
+input[type="checkbox"] {
+    box-shadow: inset 0 0 0 2px black; 
+    margin: 1rem;
+}
+
+
+
+ .register {
+display: contents;
+ width: 100%; 
+
+}   
+
+
+
+
+
+
+
+/* ---------------------MEDIAS QUERIES------------------------- */
+
+/* Establecer las variables de espacio para tamaños responsivos */
+:root {
+    --spacing-responsive: 1rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 950px) {
+    :root {
+        --spacing-responsive: 0.8rem;
+    }
+
+    .container-main {
+        grid-template-columns: 1fr;
+        row-gap: var(--spacing-responsive);
+        padding-left: var(--spacing-68);
+        padding-right: var(--spacing-68);
+    }
+
+  .main-title {
+        font-size: var(--font-jumbo);
+        width: 100%;
+        text-align: center;
+            }
+        
+
+    .main-subtitle {
+font-size: var(--font-large);
+width: 100%;
+text-align: center;
+    }
+
+
+
+    
+    .form__name--input,
+    .form__lastname--input,
+    .form__email--input,
+    .form__password--input,
+    .form__repeat-password--input,
+    .form__register--button,
+    .form__register--terms {
+        width: 100%;
+        max-width: none;
+    }
+
+
+    .register {
+        width: 100%;
+        padding: var(--spacing-responsive);
+        box-sizing: border-box;
+        margin-top: 0;
+        max-width: none;
+    }
+
+    .form__register {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 0; /* Ajustar según sea necesario */
+    }
+
+    .form__register--button {
+        width: 100%;
+        text-align: center;
+        margin-top: var(--spacing-16); /* Ajustar según sea necesario */
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/* Ajustes adicionales para pantallas más pequeñas (360px hacia abajo) */
+@media only screen and (max-width: 472px) {
+    .container-main {
+        padding-left: var(--spacing-responsive);
+        padding-right: var(--spacing-responsive);
+    }
+
+    .form__register {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .register {
+        width: 100%;
+        padding: var(--spacing-responsive);
+        box-sizing: border-box;
+
+        max-width: 50rem;
+       
+     
+  
+    }
+}
+
+
+@media only screen and (max-width: 350px)  {
+    .main-title {
+        font-size: var(--font-large);
+        width: 100%;
+        text-align: center;
+            }
+        
+
+    .main-subtitle {
+font-size: var(--font-medium);
+width: 100%;
+text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+    .container-main {
+        max-width: 100%; /* o el ancho máximo deseado */
+    }
+
+    .main-title {
+        font-size: var(--font-large);
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-subtitle {
+        font-size: var(--font-medium);
+        width: 100%;
+        text-align: center;
+    }
+
+    .form__name--input,
+    .form__lastname--input,
+    .form__email--input,
+    .form__password--input,
+    .form__repeat-password--input,
+    .form__register--button,
+    .form__register--terms {
+        width: 100%;
+        max-width: 12rem;
+    }
+
+    .register {
+        width: 100%;
+        padding: var(--spacing-responsive);
+        box-sizing: border-box;
+        margin-top: 0;
+        max-width: none;
+      
+    }
+
+    .form__register {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        font-size: var(--font-small);
+    }
+
+    .form__register--button {
+        width: 100%;
+        text-align: center;
+        margin-top: var(--spacing-16);
+    }
+
+    .form__register--terms__link {
+        width: 50%;
+        max-width: 7rem;
+        
+    }
+
+    .form__register--terms--labels {
+        width: 50%;
+        max-width: 10rem;
+        font-size: var(--font-xsmall);
+    }
+}

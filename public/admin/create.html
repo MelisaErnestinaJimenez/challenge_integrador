@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
+    <title>CREAR NUEVO ITEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/create.css">
+</head>
+
+<body>
+    <!--Inicio header-->
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          
+        </div>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+               
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/create.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">SALIR</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin header-->
+    <main class="main-container container">
+        <h1 class="item-title">CREAR NUEVO ITEM</h1>
+
+      <div class="cont-bar">
+
+            <label class="categoria" for="categoria">Categoria: 
+                <select class="selectores" name="seleccionar"
+                        id="seleccionar" placeholder="Seleccionar">
+                        <option value="">Seleccionar</option>
+                    </select></label>
+        
+            <label class="licencia" for="">Licencia:
+            <select class="selectores" name="seleccionar" 
+                id="seleccionar" placeholder="Seleccionar">
+                    <option value="">Seleccionar</option>
+                </select>
+            </label>        
+    </div>
+
+    
+        <div>
+
+            <label class="title-create" for=""><strong>Nombre del producto:</strong> <input class="input-border-c" type="text" name=""
+                    placeholder="Kakashi Hatake Shippuden Saga"></label>
+
+        </div>
+
+        <div class="textarea"> 
+            <textarea class="textarea" name="descripción" rows="10" cols="40">Descripción del producto</textarea>
+        </div>
+        <div class="caracteristicas">
+
+            <label class="title-create" for=""><strong>SKU:</strong> 
+                <input class="input-border-b" type="text" name="" placeholder="SSK111AB001"></label>
+            <label class="title-create" for=""> <strong>Precio:</strong> 
+                <input class="input-border-b" type="int" name="" placeholder="$0.000,00"></label>
+            <label class="title-create" for=""><strong>Stock:</strong>
+                <input class="input-border-a" type="int" name="" placeholder="0"></label>
+
+        </div>
+    <div class="payment">
+        <div class="payment-details">
+            <label class="title-create" for=""><strong>Descuento:</strong> <input class="input-border-a" type="int" name="" placeholder="0%"></label>
+            <label class="title-create" for=""><strong>Cuotas:</strong></label>
+
+        </div>
+        <div>
+            <select class="cuotas" name="cuotas" id="cuotas"
+                        placeholder="3 Cuotas sin interés">
+                        <option value="">3 Cuotas sin interés</option>
+                    </select>
+        </div>
+    </div>
+        <div class="archivo-img">
+            <label class="title-create" for="imagenes">Imagenes: <button class="elegir-archivo">Elegir archivos</button></label>
+            <p class="text-img">No se ha seleccionado ningún archivos</p>
+            
+        </div>
+        <div class="btns">
+            <button class="btn">Agregar producto</button>
+            <button class="btn">Limpiar</button>
+        </div>
+             
+    </main>
+ 
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="../../js/item.js"></script>
+    <script src="../../javascript/menuhamb.js"></script>
+</body>
+
+</html>

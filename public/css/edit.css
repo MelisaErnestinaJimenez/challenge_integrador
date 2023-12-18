@@ -1,0 +1,272 @@
+
+
+
+select {
+   
+    background: transparent;
+    background: url('https://api.iconify.design/ic/round-arrow-drop-up.svg?rotate=180deg') no-repeat center center / contain;
+    background-position-x: 100%;
+    border: 2px solid #30343F;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+} 
+
+
+/* MAIN */
+
+.main-title {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+    text-align: center;
+}
+
+
+/* FORM */
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.options {
+    font-size: var(--font-large);
+    padding: var(--spacing-24) 0;
+    display: flex;
+    gap: var(--spacing-24);
+}
+
+
+
+.options--select {
+    padding-right: var(--spacing-68);
+    width: auto;
+}
+
+.product-name-description {
+    font-size: var(--font-small);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-24);
+    margin-bottom: var(--spacing-12);
+}
+
+.product-name-description {
+    display: flex;
+    gap: var(--spacing-16);
+}
+
+
+
+
+.product-name__input {
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.product-textarea {
+    max-width: 700px;
+    padding: var(--spacing-12);
+}
+
+textarea {
+    width: 100%;
+}
+
+.inputs {
+    font-size: var(--font-large);
+    display: flex;
+    gap: var(--spacing-20);
+}
+
+
+
+.inputs--input {
+    max-width: var(--spacing-128);
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.inputs--input:nth-last-child(1) {
+    padding: 0 var(--spacing-8);
+    width: var(--spacing-36);
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.promo {
+    font-size: var(--font-large);
+    display: flex;
+    gap: var(--spacing-24);
+    align-items: flex-end;
+}
+
+
+
+.promo--input {
+    padding: 0 var(--spacing-8);
+    width: var(--spacing-36);
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+    height: 4rem;
+
+}
+
+.promo--select {
+    padding-right: var(--spacing-128);
+    width: auto;
+}
+
+.images {
+    font-size: var(--font-large);
+    padding: var(--spacing-12) 0;
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: var(--spacing-24);
+    padding-bottom: var(--spacing-24);
+}
+
+.buttons--button {
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    padding: var(--spacing-8) var(--spacing-16);
+    border: 0;
+    font-weight: 400;
+    font-size: var(--font-medium);
+    transition: all .3s ease-in-out;
+}
+
+.buttons--button:hover {
+    cursor: pointer;
+    background-color: var(--primary-500);
+}
+
+/* Triángulo invertido para el menú desplegable */
+.select-arrow {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+  }
+  
+  .select-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+  }
+  
+  /* Ajuste para el menú de selección */
+  .options--select {
+    appearance: none;
+    padding: 8px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  
+  .promo--select-cuotas {
+    width: 25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2rem; 
+    background: url('https://api.iconify.design/ic/round-arrow-drop-up.svg?rotate=180deg') no-repeat center right / contain;
+}
+
+
+    
+  
+
+
+:root {
+    --spacing-responsive: 1rem;
+  }
+  
+ 
+  @media only screen and (max-width: 768px) {
+    :root {
+      --spacing-responsive: 0.8rem;
+    }
+
+    .main-form {
+        margin: var(--spacing-36);
+    }
+  
+    .container {
+        margin: var(--spacing-8);
+    }
+    
+    .main-title {
+      font-size: var(--font-xlarge);
+    }
+
+    .product-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-name__label {
+        font-size: var(--font-small);
+    }
+
+    .product-name__input {
+        font-size: var(--font-small);
+    }
+
+   .product-textarea {
+        font-size: var(--font-large); 
+    }
+  
+    .options,
+    .product-name-description,
+    .inputs,
+    .promo,
+    .images,
+    .buttons {
+      flex-direction: column;
+      gap: var(--spacing-responsive);
+    }
+  
+    .options--select,
+    .inputs--input,
+    .inputs--input:nth-last-child(1),
+    .promo--input,
+    .promo--select-cuotas,
+    .images--input {
+      width: 100%;
+      max-width: none;
+      font-size: var(--font-xsmall) !important; 
+    }
+  
+    .promo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .promo--select-cuotas {
+      padding-right: 0;
+      width: 70%;
+    }
+  }
+  
