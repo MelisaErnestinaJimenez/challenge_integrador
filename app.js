@@ -19,6 +19,8 @@ app.use(express.json());
 app.use(methodOverride('__method'));
 
 
+
+
 // app.get('/home', (req, res) => res.sendFile(__dirname + '/public/index.html'));
 // app.get('/ping', (req, res) => res.send('pong'));
 
@@ -31,4 +33,4 @@ app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes); 
 app.use('/auth', authRoutes); 
 
-app.listen(4000, () => console.log("Servidor corriendo en http://localhost:4000"));
+app.listen(3000, () => console.log("Servidor corriendo en http://localhost:3000"));

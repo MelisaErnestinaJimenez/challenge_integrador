@@ -191,6 +191,27 @@ textarea {
     background: url('https://api.iconify.design/ic/round-arrow-drop-up.svg?rotate=180deg') no-repeat center right / contain;
 }
 
+.form__box--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: var(--spacing-24);
+    margin: var(--spacing-12);
+    font-size: var(--font-xsmall) !important;
+}
+
+
+p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.edit__img {
+    width: 10rem;
+    height: 10rem;
+    border-bottom: 2px solid #e00505;
+}
 
     
   

@@ -68,8 +68,8 @@ INSERT INTO `licence` (`licence_id`, `licence_name`, `licence_description`, `lic
 (1, 'Pokemon', 'Atrapa todos los que puedas y disfruta de una colección llena de amigos.', 'pokemon/vulpix-1.webp'),
 (2, 'Star Wars', 'Disfruta de una saga que sigue agregando personajes a su colección.', 'star-wars/baby-yoda-1.webp'),
 (3, 'Harry Potter', 'Revive los recuerdos de una saga llena de magia y encanto.', 'harry-potter/snape-patronus-1.webp'),
-(4, 'Overwatch', 'Disfruta de la historia de ', 'overwatch/tracer-1.webp'),
-(5, 'Naruto', 'Disfruta de la historia de un ninja adolescente', 'naruto/nr-cover-png');
+(4, 'Naruto', 'Disfruta de la historia de un ninja adolescente', 'naruto/nr-cover-png');
+
 
 -- --------------------------------------------------------
 
@@ -110,9 +110,8 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_description`, `pri
 (10, 'Herminione Ball Dress', 'Figura coleccionable de Herminione - Harry Potter Saga.', '1799.99', 8, 10, 'HPT001002', 3, 'harry-potter/hermione-1.webp', 'harry-potter/hermione-box.webp', 3, 1),
 (11, 'Luna Lovegood Lion Mask', 'Figura coleccionable de Luna Lovegood - Harry Potter Saga.', '1799.99', 8, 10, 'HPT001003', 3, 'harry-potter/luna-1.webp', 'harry-potter/luna-box.webp', 3, 1),
 (12, 'Snape Patronus', 'Figura coleccionable de Snape Patronus - Harry Potter Saga.', '1799.99', 13, 10, 'HPT001004', 3, 'harry-potter/snape-patronus-1.webp', 'harry-potter/snape-patronus-box.webp', 3, 1),
-(13, 'Kiriko', 'Kiriko de Overwatch', '1999.99', 20, 10, 'NRT001001', 9, 'overwatch/kiriko-1.webp', 'overwatch/kiriko-box.webp', 4, 1),
-(14, 'Tracer', 'Tracer de Overwatch', '1999.99', 20, 10, 'NRT001001', 9, 'overwatch/tracer-1.webp', 'overwatch/tracer-box.webp', 4, 1),
-(15, 'Widowmaker', 'Widowmaker de Overwatch', '1999.99', 20, 10, 'NRT001001', 9, 'overwatch/widowmaker-1.webp', 'naruto/1689698488381-kakashi-box.png', 4, 1);
+(13, 'Kakashi', 'Naruto', '1999.99', 20, 10, 'NRT001001', 9, 'naruto/1689698488381-kakashi-1.png', 'naruto/1689698488200-kakashi-1.webp', 4, 1);
+
 
 -- --------------------------------------------------------
 

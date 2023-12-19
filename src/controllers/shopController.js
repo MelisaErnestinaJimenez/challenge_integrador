@@ -2,7 +2,7 @@ const path = require('path');
 
 const { title } = require('process');
 
-const { getAll } = require('../models/product.model');
+const { getAll, getOne } = require('../models/product.model');
 
 const json= [
   {
@@ -119,10 +119,11 @@ const json= [
 module.exports = {
   shop: async (req, res) => {
 
-  const data = await getAll ();
+  const data = await getAll();
+
 
  
-  res.render(path.resolve(__dirname, '../views/shop/shop.ejs'), {
+  res.render(path.resolve(__dirname, '../views/shop/shop.ejs'),{
     title: "Tienda",
      data 
   });
@@ -133,11 +134,14 @@ module.exports = {
    
   },
 
-  item: (req, res) => {
+  item: async (req, res) => {
    const itemId = req.params.id;
-   const  item = json.find(item => item.product_id == itemId);
 
-    res.render(path.resolve(__dirname, '../views/shop/item.ejs'),{
+   const [item] = await getOne(itemId);
+
+   console.log(item);
+
+    res.render(path.resolve(__dirname, '../views/shop/item.ejs'), {
       title: "Item",
       item: item
     });
@@ -153,3 +157,8 @@ module.exports = {
    res.send('Route for got to checkout page');
   },
   };
+
+
+
+
+

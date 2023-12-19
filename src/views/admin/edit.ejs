@@ -73,20 +73,20 @@
             <section class="product-name">
                 <section class="product-name-description">
                     <label class="product-name__label" for="nombre-producto">Nombre del producto:</label>
-                    <input class="product-name__input" type="text" name="nombre-producto" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+                    <input class="product-name__input" type="text" name="nombre-producto" id="nombre-producto" value="<%= product.product_name %>">
 
                 </section>
-                <textarea class="product-textarea" name="descripcion-producto" id="descripcion-producto" cols="30" rows="10" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  "></textarea>
+                <textarea class="product-textarea" name="descripcion-producto" id="descripcion-producto" cols="30" rows="10" value=""><%= product.product_description %></textarea>
             </section>
 
 
             <section class="inputs">
                 <label class="inputs--label" for="sku">SKU:</label>
-                <input class="inputs--input" type="text" name="sku" id="sku" placeholder="NAR001012">
+                <input class="inputs--input" type="text" name="sku" id="sku" value="<%= product.sku %>">
                 <label class="inputs--label" for="precio">Precio:</label>
-                <input class="inputs--input" type="text" name="precio" id="precio" placeholder="$ 1.799,00">
+                <input class="inputs--input" type="text" name="precio" id="precio" value="<%= product.price %>">
                 <label class="inputs--label" for="stock">Stock:</label>
-                <input class="inputs--input" type="text" name="stock" id="stock" placeholder="10">
+                <input class="inputs--input" type="text" name="stock" id="stock" value="<%= product.stock %>">
             </section>
             <section class="promo">
                 <label class="promo--label" for="descuento">Descuento:</label>
@@ -107,6 +107,16 @@
 
             </section>
             <section class="images">
+                <div class="form__box--flex">
+                    <div class="edit__img">
+                        <img src="/img/<%= product.image_front %>" alt="<%= product.product_name %>">
+                        <p class="edit__img-side">Frente</p>
+                    </div>
+                    <div class="edit__img">
+                        <img src="/img/<%= product.image_back %>" alt="<%= product.product_name %> en caja">
+                        <p class="edit__img-side">Dorso</p>
+                    </div>
+                </div>
                 <label class="images--label" for="imagenes">Imágenes:</label>
                 <input class="images--input" type="file" name="imagen" accept="image/png, image/gif, image/jpeg, image/webp" id="">
             </section>
