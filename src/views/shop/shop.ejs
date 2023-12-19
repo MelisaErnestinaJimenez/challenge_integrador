@@ -122,8 +122,9 @@
                         <a class="card-item__link" href="/shop/item/<%= item.product_id%>">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">Nuevo</span>
-                                <img class="card-item__img--front" src="<%= item.img_front %>" alt="Figura Colleccionable Funko STORMTROOPER ">
-                                <img class="card-item__img--back" src="<%= item.img_back %>" alt="Figura Colleccionable Funko STORMTROOPER ">
+                                <img class="card-item__img--front" src="img/<%= item.image_front %>" alt="<%= item.product_description %>">
+                                <img class="card-item__img--back" src="img/<%= item.image_back %>" alt="<%= item.product_description %>">
+
 
                             </picture>
                             <div class="card-item__content">
@@ -344,9 +345,9 @@
 
     <%- include('../partials/footer') %>
 
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script> 
     
-    <script src="../../javascript/menuhamb.js"></script>
+     <script src="../../javascript/menuhamb.js"></script> 
 </body>
 
 </html>
