@@ -151,7 +151,9 @@ module.exports = {
   },
 
   cart: (req,res) => {
-  res.send('Route for cart View');
+    res.render(path.resolve(__dirname, '../views/shop/cart.ejs'), {
+      title:"Cart"
+    });
   },
   addToCart: (req,res) => {
    res.send('Route for got to checkout page');
