@@ -98,7 +98,9 @@
 
                    
                     
-                    <input class="send" type="submit" value="Agregar al Carrito">
+                    <!-- <input class="send" type="submit" value="Agregar al Carrito"> -->
+                    <a href="#" id="addToCartButton"><button class="send" type="button">Agregar al carrito</button></a>
+                    
 
                     <!-- agregar link a metodos de pago -->
                 </form>
@@ -228,6 +230,14 @@
 <script src="../../javascript/item.js"></script>
 
 <script src="../../javascript/menuhamb.js"></script>
+
+<script>
+    // Asigna un evento de clic al botón
+    document.getElementById('addToCartButton').addEventListener('click', function() {
+      // Redirige a la página del carrito
+      window.location.href = "/shop/cart";
+    });
+  </script>
 
 <script>
     new Glide('.glide', {

@@ -75,16 +75,19 @@
                 <div class="cart-table__header--cantidad">Cantidad</div>
                 <div class="cart-table__header--total">Total</div>
             </div>
+            <% cart.forEach(item=> { %>
             <div class="cart-table__item">
                 <div class="funko">
-                    <img class="funko__img" src="../../img/star-wars/baby-yoda-1.webp" alt="Producto">
+                    <img class="funko__img" src="../img/<%= item.image_front %>" alt="Producto">
                     <div class="funko__text">
-                        <h2 class="funko__text-title">BABY YODA BLUEBALL</h2>
-                        <p class="funko__text-licence">STARS WARS</p>
+                        <h2 class="funko__text-title"><%= item.product_name %></h2>
+                        <p class="funko__text-licence"><%= item.licence_name %></p>
 
-                        <p class="funko__text-price">precio: $1799,99</p>
+                        <p class="funko__text-price"><%= item.price %></p>
                     </div>
                 </div>
+
+           
                 <div class="item__cart">
                     <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
                     <div class="btnmasmenos">
@@ -97,10 +100,13 @@
                     <p class="cart-table__total-price">$3599,98</p>
                 </div>
                 <button class="button-x"><iconify-icon id="button-x" icon="tabler:xbox-x"></iconify-icon></button>
+               
+                <% }) %>
             </div>
 
+          
 
-            <div class="cart-table__item">
+            <!-- <div class="cart-table__item">
                 <div class="funko">
                     <img class="funko__img" src="../../img/pokemon/pidgeotto-1.webp" alt="Producto">
                     <div class="funko__text">
@@ -124,7 +130,7 @@
            
                 <button class="button-x"><iconify-icon id="button-x" icon="tabler:xbox-x"></iconify-icon></button>
            
-        </div>
+        </div> -->
 
         <section class="resumen">
             <article class="resumen__content">
