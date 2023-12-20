@@ -45,6 +45,7 @@ select {
 .options--select {
     padding-right: var(--spacing-68);
     width: auto;
+    max-width: 10rem;
 }
 
 .product-name-description {
@@ -174,8 +175,8 @@ textarea {
   .options--select {
     appearance: none;
     padding: 8px;
-    width: 100%;
-    max-width: 250px;
+    /* width: 100%; */
+    max-width: 40rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;

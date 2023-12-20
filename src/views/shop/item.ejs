@@ -88,8 +88,8 @@
                 <p class="product__content--price"><%= item.product_price%></p>
               
 
-                <form class="product__form" action="">
-                   
+                <form class="product__form" action="" method="POST">
+                    <input type="hidden" name="itemId" value="<%= item.id %>">
                     <input class="quantity" type="text" name="quantity" id="quantity" placeholder="0">
                    <div class="btnmasmenos">
                     <button id="subtract" class="mp width-icon"><iconify-icon icon="ic:baseline-minus" style="color: white;"></iconify-icon></button>

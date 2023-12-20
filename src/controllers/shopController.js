@@ -4,6 +4,9 @@ const { title } = require('process');
 
 const { getAll, getOne } = require('../models/product.model');
 
+const { addToCart } = require('../models/cart.model');
+
+
 let cart = [];
 
 // const json= [

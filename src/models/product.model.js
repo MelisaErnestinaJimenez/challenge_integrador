@@ -7,6 +7,8 @@ const getAll = async () => {
         product.product_id,
         product.sku,
         product.product_name,
+        product.dues,
+        product.price,
         product.image_front,
         product.image_back,
         category.category_name AS category_name,

@@ -54,9 +54,22 @@
                 <label class="options--label" for="categoria">Categoría:</label>
            
                 <select class="options--select" name="categoria" id="categoria">
-                    <option class="options--select__default-category" value="" disabled selected>Figuras</option>
-                    <option value="" >categoria 1</option>
-                    <option value="" >categoria 2</option>
+                    <% if ( product.category_id == 2) { %>
+                        <option value="1" selected >Figuras coleccionables</option>
+                    <option value="3" >Llaveros</option>
+                    <option value="2" >Remeras</option>
+                   <% } %>
+                   <% if ( product.category_id == 3) { %>
+                    <option value="1"  >Figuras coleccionables</option>
+                <option value="3" >Llaveros</option>
+                <option value="2" selected >Remeras</option>
+               <% } %>
+               <% if ( product.category_id == 1) { %>
+                <option value="1" selected >Figuras coleccionables</option>
+            <option value="3"  >Llaveros</option>
+            <option value="2"  >Remeras</option>
+           <% } %>
+
                  
                 </select>
 
@@ -64,9 +77,24 @@
              
                 <select class="options--select" name="licencia" id="licencia">
           
-                    <option class="options--select__default-licence" value="" disabled selected>Naruto Shippuden</option>
-                    <option value="" >licencia 1</option>
-                    <option value="" >licencia 2</option>
+                    <% if ( product.licence_id == 2) { %>
+                        <option value="2" selected >Star Wars</option>
+                    <option value="3" >Pokemón</option>
+                    <option value="1" >Harry Potter</option>
+                   <% } %>
+                   <% if ( product.licence_id == 3) { %>
+                    <option value="2"  >Star Wars</option>
+                <option value="1" >Pokemón</option>
+                <option value="3" selected >Harry Potter</option>
+               <% } %>
+               <% if ( product.licence_id == 1) { %>
+                <option value="2"  >Star Wars</option>
+            <option value="1" selected >Pokemón</option>
+            <option value="3"  >Harry Potter</option>
+           <% } %>
+
+
+                   
                 </select>
             </section>
 
@@ -94,11 +122,11 @@
                 <label class="promo--label" for="cuotas">Cuotas:</label >
                 <select class="promo--select-cuotas" name="cuotas" id="cuotas">
                   
-                    <option value="" disabled selected>3 Cuotas sin interés</option>
-                    <option value="" selected>3 Cuotas sin interés</option>
+                    <option value="" selected>Sin cuotas</option>
+                    <option value="">3 Cuotas sin interés</option>
                     <option value="">6 Cuotas sin interés</option>
                     <option value="">9 Cuotas sin interés</option>
-                    <option value="">0</option>
+                    <option value="">12 Cuotas sin interés</option>
                 </select>
 
                 
